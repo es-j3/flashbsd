@@ -14,12 +14,13 @@ image=$(yad --file --title="Select Disk Image to Flash" --file-filter="Disk imag
 if [ $? -ne 0 ]; then
     exit 0
 fi
+geom_list=$(geom disk list | awk '/Geom name:/ {printf "%s ", $0; next} 1' | fmt -w 80)
 
-geom_list=$(geom disk list || error_exit "Failed to list geom disks.")
 geom=$(yad --title="Select Drive to Flash" \
     --form \
     --text="Type out the geom name of the drive you want to flash (e.g., /dev/da0). Below is the output of 'geom disk list':\n\n$geom_list" \
-    --field="Drive name:":CBE --button=Cancel:1 --button=OK:0 "/dev/")
+    --field="Drive name:":CBE --button=Cancel:1 --button=OK:0 "/dev/" \
+    --text-align=center --fontname="Monospace 10")
 if [ $? -ne 0 ]; then
     exit 0
 fi
