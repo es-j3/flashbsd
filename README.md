@@ -1,5 +1,6 @@
 ## FlashBSD
-> Just a GUI dd frontend
+> Just a GUI dd frontend.
+
 > I noticed the absence of GUI USB Flashing tools on the BSD's in general, so might as well fix that :)
 
 YAD and BASH are required: 
