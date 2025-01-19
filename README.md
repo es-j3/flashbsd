@@ -3,10 +3,15 @@
 ### Also because of the absence of GUI USB Flashing tools on the BSD's in general
 
 YAD and BASH are reqired: 
+
 ```pkg install yad bash```
+
 ```pkg_add yad bash```
+
 ```pkgin install yad bash```
 
 ```fetch https://raw.githubusercontent.com/es-j3/flashbsd/flashbsd.sh```
+
 ```chmod +x flashbsd.sh```
+
 ```bash flashbsd.sh```
