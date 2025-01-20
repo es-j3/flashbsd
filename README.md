@@ -5,14 +5,14 @@
 
 YAD and BASH are required: 
 
-```pkg install yad bash```
+```pkg install yad```
 
-```pkg_add yad bash```
+```pkg_add yad```
 
-```pkgin install yad bash```
+```pkgin install yad```
 
 ```fetch https://raw.githubusercontent.com/es-j3/flashbsd/main/flashbsd.sh```
 
 ```chmod +x flashbsd.sh```
 
-```bash flashbsd.sh```
+```./flashbsd.sh```
