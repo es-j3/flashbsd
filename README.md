@@ -3,7 +3,7 @@
 
 > I noticed the absence of GUI USB Flashing tools on the BSD's in general, so might as well fix that :)
 
-YAD and BASH are required: 
+YAD is required: 
 
 ```pkg install yad```
 
